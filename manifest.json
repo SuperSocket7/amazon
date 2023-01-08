@@ -1,0 +1,26 @@
+{
+
+  "manifest_version": 2,
+  "name": "Amazonの個人情報を隠す",
+  "version": "2.0",
+
+  "description": "スクリプトキディの産物",
+
+  "icons": {
+    "48": "icon/amazon48.png"
+  },
+
+  "applications": {
+    "gecko": {
+      "id": "mail@nekokawa.net"
+    }
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.amazon.co.jp/*"],
+      "js": ["extension.js"]
+    }
+  ]
+
+}
